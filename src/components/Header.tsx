@@ -4,7 +4,7 @@ const Header: React.FC = () => {
   return (
     <header className="bg-light">
       <div className="container">
-        <nav className="flex items-center justify-between" style={{ padding: '30px 0' }}>
+        <nav className="flex items-center justify-between header-nav" style={{ padding: '30px 0' }}>
           {/* Logo */}
           <div className="flex items-center gap-sm">
             <img 
@@ -15,7 +15,7 @@ const Header: React.FC = () => {
           </div>
 
           {/* Navigation Menu */}
-          <div className="flex items-center" style={{ gap: '50px' }}>
+          <div className="flex items-center nav-menu" style={{ gap: '50px' }}>
             <a href="#" className="btn-ghost text-md">Home</a>
             <a href="#" className="btn-ghost text-md">Service</a>
             <a href="#" className="btn-ghost text-md">Feature</a>
@@ -25,7 +25,7 @@ const Header: React.FC = () => {
           </div>
 
           {/* Auth Buttons */}
-          <div className="flex items-center" style={{ gap: '14px' }}>
+          <div className="flex items-center nav-auth" style={{ gap: '14px' }}>
             <a href="#" className="text-primary-color font-medium text-sm">Login</a>
             <a href="#" className="btn btn-primary text-sm">Sign up</a>
           </div>

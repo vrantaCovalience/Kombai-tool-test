@@ -20,9 +20,9 @@ const ContentSection: React.FC<ContentSectionProps> = ({
   return (
     <section className="section-lg">
       <div className="container">
-        <div className={`flex items-center gap-xl ${reverse ? 'flex-row-reverse' : ''}`}>
+        <div className={`flex items-center gap-xl content-section-row ${reverse ? 'reverse' : ''}`}>
           {/* Image */}
-          <div style={{ flex: '0 0 442px' }}>
+          <div className="content-image" style={{ flex: '0 0 442px' }}>
             <img 
               src={imageSrc} 
               alt={imageAlt}
@@ -31,7 +31,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
           </div>
 
           {/* Content */}
-          <div className="flex flex-col gap-lg" style={{ flex: '1' }}>
+          <div className="flex flex-col gap-lg content-text" style={{ flex: '1' }}>
             <div className="flex flex-col gap-sm">
               <h2 className="heading-xl" style={{ lineHeight: '44px' }}>
                 {title}

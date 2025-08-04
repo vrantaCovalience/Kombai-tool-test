@@ -5,9 +5,9 @@ const Testimonial: React.FC = () => {
   return (
     <section className="bg-light section">
       <div className="container">
-        <div className="flex items-center" style={{ gap: '78px' }}>
+        <div className="flex items-center testimonial-row" style={{ gap: '78px' }}>
           {/* Customer Photo */}
-          <div style={{ flex: '0 0 326px' }}>
+          <div className="testimonial-image" style={{ flex: '0 0 326px' }}>
             <img 
               src="/assets/customer-photo.jpg" 
               alt="Tim Smith"
@@ -17,7 +17,7 @@ const Testimonial: React.FC = () => {
           </div>
 
           {/* Content */}
-          <div className="flex flex-col gap-lg" style={{ flex: '1' }}>
+          <div className="flex flex-col gap-lg testimonial-content" style={{ flex: '1' }}>
             <div className="flex flex-col gap-sm">
               <p className="text-secondary font-medium" style={{ lineHeight: '24px', fontSize: '16px' }}>
                 Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus 

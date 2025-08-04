@@ -4,7 +4,7 @@ const Hero: React.FC = () => {
   return (
     <section className="bg-light section-lg">
       <div className="container">
-        <div className="flex items-center" style={{ gap: '104px' }}>
+        <div className="flex items-center hero-content" style={{ gap: '104px' }}>
           {/* Content */}
           <div className="flex flex-col gap-lg" style={{ flex: '1' }}>
             <div className="flex flex-col gap-sm">
@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Illustration */}
-          <div style={{ flex: '0 0 391px' }}>
+          <div className="hero-illustration" style={{ flex: '0 0 391px' }}>
             <img 
               src="/assets/hero-illustration.svg" 
               alt="Business growth illustration" 

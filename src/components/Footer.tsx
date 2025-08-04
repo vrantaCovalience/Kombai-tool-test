@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-dark">
       <div className="container">
-        <div className="flex items-start justify-between" style={{ padding: '64px 0', gap: '125px' }}>
+        <div className="flex items-start justify-between footer-content" style={{ padding: '64px 0', gap: '125px' }}>
           {/* Company Info */}
           <div className="flex flex-col gap-xl">
             <img 
@@ -36,9 +36,9 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Links */}
-          <div className="flex gap-lg">
+          <div className="flex gap-lg footer-links">
             {/* Company Column */}
-            <div className="flex flex-col gap-md" style={{ width: '160px' }}>
+            <div className="flex flex-col gap-md footer-column" style={{ width: '160px' }}>
               <h4 className="text-white heading-md">Company</h4>
               <div className="flex flex-col" style={{ gap: '12px' }}>
                 <a href="#" className="text-sm" style={{ color: 'var(--color-background-light)' }}>About us</a>
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
             </div>
 
             {/* Support Column */}
-            <div className="flex flex-col gap-md" style={{ width: '160px' }}>
+            <div className="flex flex-col gap-md footer-column" style={{ width: '160px' }}>
               <h4 className="text-white heading-md">Support</h4>
               <div className="flex flex-col" style={{ gap: '12px' }}>
                 <a href="#" className="text-sm" style={{ color: 'var(--color-background-light)' }}>Help center</a>
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
             </div>
 
             {/* Newsletter Column */}
-            <div className="flex flex-col gap-md" style={{ width: '255px' }}>
+            <div className="flex flex-col gap-md footer-column" style={{ width: '255px' }}>
               <h4 className="text-white heading-md">Stay up to date</h4>
               <div className="flex items-center" style={{ 
                 backgroundColor: 'var(--color-input-bg)', 
